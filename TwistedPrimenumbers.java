@@ -1,14 +1,9 @@
-package jtraining;
 import java.util.Scanner;
-public class decimal {
-
+public class TwistedPrime {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
 		int r=0;
-		
 		int flag=0,fla=0;
 		for(int i=2;i<n;i++)
 		{
@@ -19,7 +14,6 @@ public class decimal {
 			}
 			
 		}
-		
 		if(flag!=1)
 		{
 			int k=n;
