@@ -33,3 +33,39 @@ public class brn {
         System.out.println(sum+num);
     }
 }
+///////OR---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class metbrn {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int cpy=a;
+        int i=1;
+        int num=0;
+        while(cpy>0) {
+            int r=digit(cpy%10);
+            num=num+r*i;
+            cpy=cpy/10;
+            i=i*10;
+        }
+        System.out.println(num+a);
+
+    }
+    public static int digit(int n) {
+        if(n==2) {
+            return 5;
+        }
+        else if(n==5)
+        {
+            return 2;
+        } else if (n==6) {
+            return 9;
+        } else if (n==9) {
+            return 6;
+        }
+        else {
+            return n;
+        }
+    }
+}
+
